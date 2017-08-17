@@ -1,0 +1,29 @@
+{
+	"name": "coerphp/coerphp",
+	"description": "PHP Framework",
+	"keywords": ["PHP", "coerphp", "framework"],
+	"homepage": "http://coercloud.com",
+	"tyep": "project",
+	"license": "Apache-2.0",
+	"authors": [
+		{
+			"name": "Nobita",
+			"email": "380013245@qq.com",
+			"homepage": "http://coercloud.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"filp/whoops": "*",
+		"monolog/monolog": "*",
+		"symfony/var-dumper": "*",
+		"catfan/medoo": "*",
+		"twig/twig": "*"
+	},
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
