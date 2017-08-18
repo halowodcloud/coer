@@ -1,9 +1,9 @@
 {% block head %}
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>The Auto-Tuning Website Template | Home</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The Auto-Tuning Website</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="/static/index/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/static/index/css/global.css" rel="stylesheet" type="text/css" media="all" />
@@ -52,7 +52,11 @@
                 </ul>
             </div>
             <div class="header_top_right">
+                {% if data == 'admin' %}
+                <div class="login" style="background: skyblue;"> <span><a href="/login/index"><img src="/static/index/images/login.png" alt="" title="login"></a></span> </div>
+                {% else %}
                 <div class="login"> <span><a href="/login/index"><img src="/static/index/images/login.png" alt="" title="login"></a></span> </div>
+                {% endif %}
                 <div class="shopping_cart">
                     <div class="cart_img"> <img src="/static/index/images/header_cart.png"> </div>
                     <div class="cart"> <a href="#" title="View my shopping cart" rel="nofollow"> <span class="cart_title">Cart</span> <span class="no_product">(empty)</span> </a> </div>
@@ -71,7 +75,7 @@
             </ul>
             <div class="search">
                 <form>
-                    <input type="text" value="">
+                    <input type="text" value="" placeholder="{{data}}">
                     <input type="submit" value="">
                 </form>
             </div>

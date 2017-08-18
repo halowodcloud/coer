@@ -12,7 +12,6 @@
 define('COER', realpath('./'));  //项目根目录
 define('CORE', COER.'/core');  //框架核心目录
 define('APP', COER.'/app');  //框架应用目录
-define('STATIC', '/static');  //静态资源目录
 define('DEBUG', true);  //调试
 
 //引入 composer 自动加载类文件

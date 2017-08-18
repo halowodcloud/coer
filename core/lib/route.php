@@ -11,7 +11,14 @@ class route
     {
         //url路由
         $path = $_SERVER['REQUEST_URI'];
+        $control = config::getConf('CONTROL', 'route');
+        $action = config::getConf('ACTION', 'route');
         if (isset($path) && $path != '/') {
+            if ($path == '/index.php') {
+                $this->control = $control;
+                $this->action = $action;
+                return;
+            }
             $patharr = explode('/', trim($path, '/'));
             if (isset($patharr[0])) {
                 $this->control = $patharr[0];
@@ -28,14 +35,14 @@ class route
             $count = count($patharr) + 2;
             $i = 2;
             while ($i < $count) {
-                if ($patharr[$i + 1]) {
+                if (isset($patharr[$i + 1])) {
                     $_GET[$patharr[$i]] = $patharr[$i + 1];
                 }
                 $i = $i + 2;
             }
         } else {
-            $this->control = config::getConf('CONTROL', 'route');
-            $this->action = config::getConf('ACTION', 'route');
+            $this->control = $control;
+            $this->action = $action;
         }
     }
 }

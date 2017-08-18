@@ -11,7 +11,7 @@ use core\lib\model;
 
 class user extends model
 {
-    public $table = 'user';
+    public $table = 'contact';
 
     //获取数据库数据
     public function lists()
@@ -28,10 +28,10 @@ class user extends model
     }
 
     //获取单条数据
-    public function getOne($name)
+    public function getOne($id)
     {
         $result = $this -> get($this -> table, '*', [
-            'username' => $name
+            'bb_id' => $id
         ]);
         return $result;
     }

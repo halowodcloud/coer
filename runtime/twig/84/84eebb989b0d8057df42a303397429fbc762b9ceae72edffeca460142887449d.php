@@ -30,20 +30,42 @@ class __TwigTemplate_88d0179bfaa88302a12432858ff93662b7f2320afa8c606a91d6ed41226
         // line 4
         echo "  <div class=\"main\">
     <div class=\"main1\">
-      <form class=\"form-4\">
-        <h1>Login or Register</h1>
+      <form class=\"form-4\" method=\"post\" action=\"/login/check\">
+        ";
+        // line 7
+        if ((($context["data"] ?? null) == "admin")) {
+            // line 8
+            echo "        <h1>Login or Register</h1>
         <p>
           <label for=\"login\">Username or email</label>
-          <input type=\"text\" name=\"login\" placeholder=\"Username or email\" required>
+          <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
         </p>
         <p>
           <label for=\"password\">Password</label>
           <input type=\"password\" name='password' placeholder=\"Password\" required>
         </p>
         <p>
-          <input type=\"submit\" name=\"submit\" value=\"Continue\">
+          <input type=\"submit\" name=\"submit\" value=\"Log in\">
         </p>
-      </form>
+        ";
+        } else {
+            // line 21
+            echo "        <h1>dsjflksdjgaoweirgjsdfjkl or Register</h1>
+        <p>
+          <label for=\"login\">Username or email</label>
+          <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
+        </p>
+        <p>
+          <label for=\"password\">Password</label>
+          <input type=\"password\" name='password' placeholder=\"Password\" required>
+        </p>
+        <p>
+          <input type=\"submit\" name=\"submit\" value=\"Log in\">
+        </p>
+        ";
+        }
+        // line 34
+        echo "      </form>
 ​​       </div>
   </div>
 ";
@@ -61,7 +83,7 @@ class __TwigTemplate_88d0179bfaa88302a12432858ff93662b7f2320afa8c606a91d6ed41226
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,  11 => 1,);
+        return array (  68 => 34,  53 => 21,  38 => 8,  36 => 7,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -79,19 +101,34 @@ class __TwigTemplate_88d0179bfaa88302a12432858ff93662b7f2320afa8c606a91d6ed41226
 {% block content %}
   <div class=\"main\">
     <div class=\"main1\">
-      <form class=\"form-4\">
+      <form class=\"form-4\" method=\"post\" action=\"/login/check\">
+        {% if data == 'admin' %}
         <h1>Login or Register</h1>
         <p>
           <label for=\"login\">Username or email</label>
-          <input type=\"text\" name=\"login\" placeholder=\"Username or email\" required>
+          <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
         </p>
         <p>
           <label for=\"password\">Password</label>
           <input type=\"password\" name='password' placeholder=\"Password\" required>
         </p>
         <p>
-          <input type=\"submit\" name=\"submit\" value=\"Continue\">
+          <input type=\"submit\" name=\"submit\" value=\"Log in\">
         </p>
+        {% else %}
+        <h1>dsjflksdjgaoweirgjsdfjkl or Register</h1>
+        <p>
+          <label for=\"login\">Username or email</label>
+          <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
+        </p>
+        <p>
+          <label for=\"password\">Password</label>
+          <input type=\"password\" name='password' placeholder=\"Password\" required>
+        </p>
+        <p>
+          <input type=\"submit\" name=\"submit\" value=\"Log in\">
+        </p>
+        {% endif %}
       </form>
 ​​       </div>
   </div>

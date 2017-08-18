@@ -20,16 +20,16 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
     {
         // line 1
         $this->displayBlock('head', $context, $blocks);
-        // line 82
+        // line 86
         echo "
 ";
-        // line 83
+        // line 87
         $this->displayBlock('content', $context, $blocks);
-        // line 85
+        // line 89
         echo "
 
 ";
-        // line 87
+        // line 91
         $this->displayBlock('foot', $context, $blocks);
     }
 
@@ -37,11 +37,11 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
     public function block_head($context, array $blocks = array())
     {
         // line 2
-        echo "<!DOCTYPE HTML>
+        echo "<!DOCTYPE html>
 <html>
 <head>
-    <title>The Auto-Tuning Website Template | Home</title>
-    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
+    <title>The Auto-Tuning Website</title>
+    <meta charset=\"UTF-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
     <link href=\"/static/index/css/style.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
     <link href=\"/static/index/css/global.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
@@ -90,8 +90,19 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
                 </ul>
             </div>
             <div class=\"header_top_right\">
-                <div class=\"login\"> <span><a href=\"/login/index\"><img src=\"/static/index/images/login.png\" alt=\"\" title=\"login\"></a></span> </div>
-                <div class=\"shopping_cart\">
+                ";
+        // line 55
+        if ((($context["data"] ?? null) == "admin")) {
+            // line 56
+            echo "                <div class=\"login\" style=\"background: skyblue;\"> <span><a href=\"/login/index\"><img src=\"/static/index/images/login.png\" alt=\"\" title=\"login\"></a></span> </div>
+                ";
+        } else {
+            // line 58
+            echo "                <div class=\"login\"> <span><a href=\"/login/index\"><img src=\"/static/index/images/login.png\" alt=\"\" title=\"login\"></a></span> </div>
+                ";
+        }
+        // line 60
+        echo "                <div class=\"shopping_cart\">
                     <div class=\"cart_img\"> <img src=\"/static/index/images/header_cart.png\"> </div>
                     <div class=\"cart\"> <a href=\"#\" title=\"View my shopping cart\" rel=\"nofollow\"> <span class=\"cart_title\">Cart</span> <span class=\"no_product\">(empty)</span> </a> </div>
                 </div>
@@ -109,7 +120,10 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
             </ul>
             <div class=\"search\">
                 <form>
-                    <input type=\"text\" value=\"\">
+                    <input type=\"text\" value=\"\" placeholder=\"";
+        // line 78
+        echo twig_escape_filter($this->env, ($context["data"] ?? null), "html", null, true);
+        echo "\">
                     <input type=\"submit\" value=\"\">
                 </form>
             </div>
@@ -119,15 +133,15 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
 ";
     }
 
-    // line 83
+    // line 87
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 87
+    // line 91
     public function block_foot($context, array $blocks = array())
     {
-        // line 88
+        // line 92
         echo "    <div class=\"footer\">
         <div class=\"f_left\">
             <div class=\"f_nav\">
@@ -167,7 +181,7 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
 
     public function getDebugInfo()
     {
-        return array (  131 => 88,  128 => 87,  123 => 83,  40 => 2,  37 => 1,  33 => 87,  29 => 85,  27 => 83,  24 => 82,  22 => 1,);
+        return array (  145 => 92,  142 => 91,  137 => 87,  125 => 78,  105 => 60,  101 => 58,  97 => 56,  95 => 55,  40 => 2,  37 => 1,  33 => 91,  29 => 89,  27 => 87,  24 => 86,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -181,11 +195,11 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
     public function getSourceContext()
     {
         return new Twig_Source("{% block head %}
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>The Auto-Tuning Website Template | Home</title>
-    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
+    <title>The Auto-Tuning Website</title>
+    <meta charset=\"UTF-8\" />
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
     <link href=\"/static/index/css/style.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
     <link href=\"/static/index/css/global.css\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
@@ -234,7 +248,11 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
                 </ul>
             </div>
             <div class=\"header_top_right\">
+                {% if data == 'admin' %}
+                <div class=\"login\" style=\"background: skyblue;\"> <span><a href=\"/login/index\"><img src=\"/static/index/images/login.png\" alt=\"\" title=\"login\"></a></span> </div>
+                {% else %}
                 <div class=\"login\"> <span><a href=\"/login/index\"><img src=\"/static/index/images/login.png\" alt=\"\" title=\"login\"></a></span> </div>
+                {% endif %}
                 <div class=\"shopping_cart\">
                     <div class=\"cart_img\"> <img src=\"/static/index/images/header_cart.png\"> </div>
                     <div class=\"cart\"> <a href=\"#\" title=\"View my shopping cart\" rel=\"nofollow\"> <span class=\"cart_title\">Cart</span> <span class=\"no_product\">(empty)</span> </a> </div>
@@ -253,7 +271,7 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
             </ul>
             <div class=\"search\">
                 <form>
-                    <input type=\"text\" value=\"\">
+                    <input type=\"text\" value=\"\" placeholder=\"{{data}}\">
                     <input type=\"submit\" value=\"\">
                 </form>
             </div>

@@ -53,26 +53,26 @@ class __TwigTemplate_d62c45d4217986d1ddc1a9c278ddb9ec319402a7ce2542118596499f97d
         <div class=\"col span_2_of_3\">
           <div class=\"contact-form\">
             <h3>Contact Us</h3>
-            <form method=\"post\" action=\"contact-post.html\">
+            <form id=\"contact-form\" method=\"post\" action=\"/contact/aa\">
               <div> <span>
                 <label>NAME</label>
                 </span> <span>
-                <input name=\"userName\" type=\"text\" class=\"textbox\">
+                <input name=\"name\" type=\"text\" class=\"textbox\">
                 </span> </div>
               <div> <span>
                 <label>E-MAIL</label>
                 </span> <span>
-                <input name=\"userEmail\" type=\"text\" class=\"textbox\">
+                <input name=\"email\" type=\"text\" class=\"textbox\">
                 </span> </div>
               <div> <span>
                 <label>MOBILE</label>
                 </span> <span>
-                <input name=\"userPhone\" type=\"text\" class=\"textbox\">
+                <input name=\"mobile\" type=\"text\" class=\"textbox\">
                 </span> </div>
               <div> <span>
                 <label>SUBJECT</label>
                 </span> <span>
-                <textarea name=\"userMsg\"> </textarea>
+                <textarea name=\"subject\"> </textarea>
                 </span> </div>
               <div> <span>
                 <input type=\"submit\" value=\"Send me\">
@@ -140,26 +140,26 @@ class __TwigTemplate_d62c45d4217986d1ddc1a9c278ddb9ec319402a7ce2542118596499f97d
         <div class=\"col span_2_of_3\">
           <div class=\"contact-form\">
             <h3>Contact Us</h3>
-            <form method=\"post\" action=\"contact-post.html\">
+            <form id=\"contact-form\" method=\"post\" action=\"/contact/aa\">
               <div> <span>
                 <label>NAME</label>
                 </span> <span>
-                <input name=\"userName\" type=\"text\" class=\"textbox\">
+                <input name=\"name\" type=\"text\" class=\"textbox\">
                 </span> </div>
               <div> <span>
                 <label>E-MAIL</label>
                 </span> <span>
-                <input name=\"userEmail\" type=\"text\" class=\"textbox\">
+                <input name=\"email\" type=\"text\" class=\"textbox\">
                 </span> </div>
               <div> <span>
                 <label>MOBILE</label>
                 </span> <span>
-                <input name=\"userPhone\" type=\"text\" class=\"textbox\">
+                <input name=\"mobile\" type=\"text\" class=\"textbox\">
                 </span> </div>
               <div> <span>
                 <label>SUBJECT</label>
                 </span> <span>
-                <textarea name=\"userMsg\"> </textarea>
+                <textarea name=\"subject\"> </textarea>
                 </span> </div>
               <div> <span>
                 <input type=\"submit\" value=\"Send me\">

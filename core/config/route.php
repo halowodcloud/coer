@@ -7,5 +7,6 @@
  */
 return [
     'CONTROL' => 'index',
-    'ACTION' => 'index'
+    'ACTION' => 'index',
+    'STATIC' => '/static'
 ];
