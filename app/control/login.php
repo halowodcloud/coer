@@ -16,7 +16,7 @@ class login extends coer
         $this -> display('login/login');
     }
 
-    public function check()
+    public function login()
     {
         $data['username'] = $_POST['username'];
         $data['password'] = md5($_POST['password']);
@@ -27,12 +27,23 @@ class login extends coer
 //        dump($result);
 
         if ($data['username'] == $result['username'] && $data['password'] == $result['password']) {
+            $model -> setOne($data['username'], ['is_login' => 1]);
             echo '<script> alert("登录成功"); </script>';
             $this -> assign('data', $data['username']);
             jump('/index/index');
 //            $this -> display('login/login');
         } else {
             echo '<script> alert("登录失败, 请重新登录~~"); </script>';
+            jump('/login/index');
+        }
+    }
+
+    public function logout()
+    {
+        $name = $_POST['username'];
+        $model = new \app\model\user();
+        $result = $model -> setOne($name, ['is_login' => 0]);
+        if ($result) {
             jump('/login/index');
         }
     }

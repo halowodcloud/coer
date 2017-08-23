@@ -92,7 +92,7 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
             <div class=\"header_top_right\">
                 ";
         // line 55
-        if ((($context["data"] ?? null) == "admin")) {
+        if (($this->getAttribute(($context["is_login"] ?? null), "is_login", array()) == "1")) {
             // line 56
             echo "                <div class=\"login\" style=\"background: skyblue;\"> <span><a href=\"/login/index\"><img src=\"/static/index/images/login.png\" alt=\"\" title=\"login\"></a></span> </div>
                 ";
@@ -248,7 +248,7 @@ class __TwigTemplate_1526875d2433f82ee9284c588e9d2783407253a9e3781a12d7cd10329df
                 </ul>
             </div>
             <div class=\"header_top_right\">
-                {% if data == 'admin' %}
+                {% if is_login.is_login == '1' %}
                 <div class=\"login\" style=\"background: skyblue;\"> <span><a href=\"/login/index\"><img src=\"/static/index/images/login.png\" alt=\"\" title=\"login\"></a></span> </div>
                 {% else %}
                 <div class=\"login\"> <span><a href=\"/login/index\"><img src=\"/static/index/images/login.png\" alt=\"\" title=\"login\"></a></span> </div>

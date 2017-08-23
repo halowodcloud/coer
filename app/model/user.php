@@ -37,10 +37,10 @@ class user extends model
     }
 
     //更新单条数据
-    public function setOne($id, $data)
+    public function setOne($name, $data)
     {
         $result = $this -> update($this -> table, $data, [
-            'bb_id' => $id
+            'username' => $name
         ]);
         return $result;
     }

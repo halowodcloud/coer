@@ -38,28 +38,28 @@ class __TwigTemplate_5705131da9fa2d276f7d44ab4e0b26e5cd849b2125963491faddcd6c0df
       <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic1.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem Ipsum is</h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic3.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic3.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem is simply </h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic2.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic2.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem Ipsum is</h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic4.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic4.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem is simply </h3>
         </a> </div>
       <div class=\"clear\"></div>
     </div>
     <div class=\"section group btm\">
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic5.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic5.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem Ipsum is</h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic6.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic6.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem is simply </h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic7.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic7.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem Ipsum is</h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic8.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic8.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem is simply </h3>
         </a> </div>
       <div class=\"clear\"></div>
@@ -106,28 +106,28 @@ class __TwigTemplate_5705131da9fa2d276f7d44ab4e0b26e5cd849b2125963491faddcd6c0df
       <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic1.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem Ipsum is</h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic3.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic3.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem is simply </h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic2.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic2.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem Ipsum is</h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic4.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic4.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem is simply </h3>
         </a> </div>
       <div class=\"clear\"></div>
     </div>
     <div class=\"section group btm\">
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic5.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic5.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem Ipsum is</h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic6.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic6.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem is simply </h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic7.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic7.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem Ipsum is</h3>
         </a> </div>
-      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"details.html\"><img src=\"/static/index/images/pic8.jpg\"></a> <a href=\"details.html\">
+      <div class=\"grid_1_of_4 images_1_of_4\"> <a href=\"/detail/index\"><img src=\"/static/index/images/pic8.jpg\"></a> <a href=\"/detail/index\">
         <h3>Lorem is simply </h3>
         </a> </div>
       <div class=\"clear\"></div>

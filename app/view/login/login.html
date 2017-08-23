@@ -1,37 +1,33 @@
 {% extends "public/base.html" %}
 
 {% block content %}
-  <div class="main">
+<div class="main">
     <div class="main1">
-      <form class="form-4" method="post" action="/login/check">
-        {% if data == 'admin' %}
-        <h1>Login or Register</h1>
-        <p>
-          <label for="login">Username or email</label>
-          <input type="text" name="username" placeholder="Username or email" required autofocus>
-        </p>
-        <p>
-          <label for="password">Password</label>
-          <input type="password" name='password' placeholder="Password" required>
-        </p>
-        <p>
-          <input type="submit" name="submit" value="Log in">
-        </p>
+        {% if is_login.is_login == '1' %}
+        <form class="form-4" method="post" action="/login/logout">
+            <h1 style="text-align: center">Welcome {{is_login.username}}</h1>
+            <p>
+                <input type="submit" name="submit" value="Log out" style="color: skyblue;">
+            </p>
+
+            <input type="hidden" name="username" value="{{is_login.username}}">
+        </form>
         {% else %}
-        <h1>dsjflksdjgaoweirgjsdfjkl or Register</h1>
-        <p>
-          <label for="login">Username or email</label>
-          <input type="text" name="username" placeholder="Username or email" required autofocus>
-        </p>
-        <p>
-          <label for="password">Password</label>
-          <input type="password" name='password' placeholder="Password" required>
-        </p>
-        <p>
-          <input type="submit" name="submit" value="Log in">
-        </p>
-        {% endif %}
-      </form>
-​​       </div>
-  </div>
+        <form class="form-4" method="post" action="/login/login">
+            <h1>Login Or Register</h1>
+            <p>
+                <label for="login">Username or email</label>
+                <input type="text" name="username" placeholder="Username or email" required autofocus>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name='password' placeholder="Password" required>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Log in">
+            </p>
+        </form>
+        ​{% endif %}
+    </div>
+</div>
 {% endblock %}

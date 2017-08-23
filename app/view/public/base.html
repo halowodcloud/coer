@@ -52,7 +52,7 @@
                 </ul>
             </div>
             <div class="header_top_right">
-                {% if data == 'admin' %}
+                {% if is_login.is_login == '1' %}
                 <div class="login" style="background: skyblue;"> <span><a href="/login/index"><img src="/static/index/images/login.png" alt="" title="login"></a></span> </div>
                 {% else %}
                 <div class="login"> <span><a href="/login/index"><img src="/static/index/images/login.png" alt="" title="login"></a></span> </div>

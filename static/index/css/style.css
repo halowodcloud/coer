@@ -249,7 +249,7 @@ body {
 	/* Opera 12+ */
 	background: -ms-radial-gradient(center, ellipse cover, #2d2d2d 8%, #0c0c0c 58%, #0b0b0b 80%, #0a0a0a 100%);
 	/* IE10+ */
-	background: radial-gradient(ellipse at center, #2d2d2d 8%, #0c0c0c 58%, #0b0b0b 80%, #0a0a0a 100%);
+	/*background: radial-gradient(ellipse at center, #2d2d2d 8%, #0c0c0c 58%, #0b0b0b 80%, #0a0a0a 100%);*/
 	/* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#0a0a0a', GradientType=1);
 	/* IE6-9 fallback on horizontal gradient */
@@ -2009,6 +2009,7 @@ form {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-o-border-radius: 3px;
+	margin-left: 40%;
 }
 
 

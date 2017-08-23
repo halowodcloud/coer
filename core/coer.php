@@ -1,10 +1,25 @@
 <?php
 namespace core;
 
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
 class coer
 {
     public static $classMap = [];
     public $assign;
+
+    public function __construct()
+    {
+        $log = new Logger('monolog');
+        $log -> pushHandler(new StreamHandler('runtime/monolog/mono.log', Logger::WARNING));
+        $log -> addWarning('Foo');
+        $log -> addError('Bar');
+
+        $model = new \app\model\user();
+        $result = $model -> getOne('admin');
+        $this -> assign('is_login', $result);
+    }
 
     //框架运行
     public static function run()

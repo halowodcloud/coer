@@ -28,46 +28,48 @@ class __TwigTemplate_88d0179bfaa88302a12432858ff93662b7f2320afa8c606a91d6ed41226
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "  <div class=\"main\">
+        echo "<div class=\"main\">
     <div class=\"main1\">
-      <form class=\"form-4\" method=\"post\" action=\"/login/check\">
         ";
-        // line 7
-        if ((($context["data"] ?? null) == "admin")) {
+        // line 6
+        if (($this->getAttribute(($context["is_login"] ?? null), "is_login", array()) == "1")) {
+            // line 7
+            echo "        <form class=\"form-4\" method=\"post\" action=\"/login/logout\">
+            <h1 style=\"text-align: center\">Welcome ";
             // line 8
-            echo "        <h1>Login or Register</h1>
-        <p>
-          <label for=\"login\">Username or email</label>
-          <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
-        </p>
-        <p>
-          <label for=\"password\">Password</label>
-          <input type=\"password\" name='password' placeholder=\"Password\" required>
-        </p>
-        <p>
-          <input type=\"submit\" name=\"submit\" value=\"Log in\">
-        </p>
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["is_login"] ?? null), "username", array()), "html", null, true);
+            echo "</h1>
+            <p>
+                <input type=\"submit\" name=\"submit\" value=\"Log out\" style=\"color: skyblue;\">
+            </p>
+
+            <input type=\"hidden\" name=\"username\" value=\"";
+            // line 13
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["is_login"] ?? null), "username", array()), "html", null, true);
+            echo "\">
+        </form>
         ";
         } else {
-            // line 21
-            echo "        <h1>dsjflksdjgaoweirgjsdfjkl or Register</h1>
-        <p>
-          <label for=\"login\">Username or email</label>
-          <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
-        </p>
-        <p>
-          <label for=\"password\">Password</label>
-          <input type=\"password\" name='password' placeholder=\"Password\" required>
-        </p>
-        <p>
-          <input type=\"submit\" name=\"submit\" value=\"Log in\">
-        </p>
-        ";
+            // line 16
+            echo "        <form class=\"form-4\" method=\"post\" action=\"/login/login\">
+            <h1>Login Or Register</h1>
+            <p>
+                <label for=\"login\">Username or email</label>
+                <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
+            </p>
+            <p>
+                <label for=\"password\">Password</label>
+                <input type=\"password\" name='password' placeholder=\"Password\" required>
+            </p>
+            <p>
+                <input type=\"submit\" name=\"submit\" value=\"Log in\">
+            </p>
+        </form>
+        ​";
         }
-        // line 34
-        echo "      </form>
-​​       </div>
-  </div>
+        // line 31
+        echo "    </div>
+</div>
 ";
     }
 
@@ -83,7 +85,7 @@ class __TwigTemplate_88d0179bfaa88302a12432858ff93662b7f2320afa8c606a91d6ed41226
 
     public function getDebugInfo()
     {
-        return array (  68 => 34,  53 => 21,  38 => 8,  36 => 7,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  71 => 31,  54 => 16,  48 => 13,  40 => 8,  37 => 7,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -99,39 +101,35 @@ class __TwigTemplate_88d0179bfaa88302a12432858ff93662b7f2320afa8c606a91d6ed41226
         return new Twig_Source("{% extends \"public/base.html\" %}
 
 {% block content %}
-  <div class=\"main\">
+<div class=\"main\">
     <div class=\"main1\">
-      <form class=\"form-4\" method=\"post\" action=\"/login/check\">
-        {% if data == 'admin' %}
-        <h1>Login or Register</h1>
-        <p>
-          <label for=\"login\">Username or email</label>
-          <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
-        </p>
-        <p>
-          <label for=\"password\">Password</label>
-          <input type=\"password\" name='password' placeholder=\"Password\" required>
-        </p>
-        <p>
-          <input type=\"submit\" name=\"submit\" value=\"Log in\">
-        </p>
+        {% if is_login.is_login == '1' %}
+        <form class=\"form-4\" method=\"post\" action=\"/login/logout\">
+            <h1 style=\"text-align: center\">Welcome {{is_login.username}}</h1>
+            <p>
+                <input type=\"submit\" name=\"submit\" value=\"Log out\" style=\"color: skyblue;\">
+            </p>
+
+            <input type=\"hidden\" name=\"username\" value=\"{{is_login.username}}\">
+        </form>
         {% else %}
-        <h1>dsjflksdjgaoweirgjsdfjkl or Register</h1>
-        <p>
-          <label for=\"login\">Username or email</label>
-          <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
-        </p>
-        <p>
-          <label for=\"password\">Password</label>
-          <input type=\"password\" name='password' placeholder=\"Password\" required>
-        </p>
-        <p>
-          <input type=\"submit\" name=\"submit\" value=\"Log in\">
-        </p>
-        {% endif %}
-      </form>
-​​       </div>
-  </div>
+        <form class=\"form-4\" method=\"post\" action=\"/login/login\">
+            <h1>Login Or Register</h1>
+            <p>
+                <label for=\"login\">Username or email</label>
+                <input type=\"text\" name=\"username\" placeholder=\"Username or email\" required autofocus>
+            </p>
+            <p>
+                <label for=\"password\">Password</label>
+                <input type=\"password\" name='password' placeholder=\"Password\" required>
+            </p>
+            <p>
+                <input type=\"submit\" name=\"submit\" value=\"Log in\">
+            </p>
+        </form>
+        ​{% endif %}
+    </div>
+</div>
 {% endblock %}", "login/login.html", "/Users/qiuzhiwei/Documents/web/coer/app/view/login/login.html");
     }
 }
